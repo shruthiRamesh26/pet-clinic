@@ -1,6 +1,5 @@
 package petClinic.services.map;
 
-import petClinic.model.Person;
 import petClinic.model.Pet;
 import petClinic.services.CrudServcie;
 
