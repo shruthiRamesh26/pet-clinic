@@ -98,6 +98,30 @@
 
     <build>
         <plugins>
+<!--            <plugin>-->
+<!--                <groupId>ro.isdc.wro4j</groupId>-->
+<!--                <artifactId>wro4j-maven-plugin</artifactId>-->
+<!--                <version>${wro4j.version}</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <phase>compile</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>run</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--                <configuration>-->
+<!--                    <targetGroups>all</targetGroups>-->
+<!--                    <minimize>true</minimize>-->
+<!--                    <destinationFolder>${basedir}/src/main/webapp/wro/</destinationFolder>-->
+<!--                    <cssDestinationFolder>d:/static/css/</cssDestinationFolder>-->
+<!--                    <jsDestinationFolder>d:/static/js/</jsDestinationFolder>-->
+<!--                    <contextFolder>${basedir}/src/main/webapp/</contextFolder>-->
+<!--                    <wroFile>${basedir}/src/main/webapp/WEB-INF/wro.xml</wroFile>-->
+<!--                    <wroManagerFactory>com.mycompany.MyCustomWroManagerFactory</wroManagerFactory>-->
+<!--                    <ignoreMissingResources>false</ignoreMissingResources>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
             <plugin>
                 <groupId>ro.isdc.wro4j</groupId>
                 <artifactId>wro4j-maven-plugin</artifactId>
