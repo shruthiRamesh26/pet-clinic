@@ -7,7 +7,7 @@ public class Vet extends Person {
 
     private Set<Speciality> specialties =new HashSet<>();
 
-    public Set<Speciality> getSpecialties() {
+    public Set<Speciality> getSpecialities() {
         return specialties;
     }
 
