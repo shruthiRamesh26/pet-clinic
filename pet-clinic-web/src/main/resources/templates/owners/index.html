@@ -12,6 +12,10 @@
                 <th >ID</th>
                 <th>First Name</th>
                 <th>Last Name</th>
+                <th>Address</th>
+                <th>city</th>
+                <th>Telephone</th>
+                <th>Pets</th>
             </tr>
         </thead>
         <tbody>
@@ -19,6 +23,10 @@
                 <td th:text="${owner?.id}">1</td>
                 <td th:text="${owner?.firstName}">A</td>
                 <td th:text="${owner?.lastName}">B</td>
+                <td th:text="${owner?.address}">B</td>
+                <td th:text="${owner?.city}">B</td>
+                <td th:text="${owner?.telephone}">B</td>
+                <td th:text="${owner?.pets}">B</td>
             </tr>
         </tbody>
     </table>
