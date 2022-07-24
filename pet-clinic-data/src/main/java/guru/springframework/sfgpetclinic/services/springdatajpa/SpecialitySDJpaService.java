@@ -2,6 +2,7 @@ package guru.springframework.sfgpetclinic.services.springdatajpa;
 
 
 import guru.springframework.sfgpetclinic.model.Speciality;
+import guru.springframework.sfgpetclinic.repositories.SpecialityRepository;
 import guru.springframework.sfgpetclinic.services.SpecialtyService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
@@ -12,9 +13,9 @@ import java.util.Set;
 @Service
 @Profile("springdatajpa")
 public class SpecialitySDJpaService implements SpecialtyService {
-    private final SpecialtyService specialtyRepository;
+    private final SpecialityRepository specialtyRepository;
 
-    public SpecialitySDJpaService(SpecialtyService specialtyRepository) {
+    public SpecialitySDJpaService(SpecialityRepository specialtyRepository) {
         this.specialtyRepository = specialtyRepository;
     }
 
@@ -27,7 +28,7 @@ public class SpecialitySDJpaService implements SpecialtyService {
 
     @Override
     public Speciality findById(Long aLong) {
-        return specialtyRepository.findById(aLong);
+        return specialtyRepository.findById(aLong).get();
     }
 
     @Override
